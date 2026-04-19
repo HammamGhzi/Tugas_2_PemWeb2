@@ -17,7 +17,7 @@ type FormData = {
 
 const schema = z.object({
     nama: z.string().min(1, "Nama harus diisi"),
-    email: z.string().email("Email tidak valid"),
+    email: z.string().email("email tidak valid"),
     password: z.string().min(8, "Password minimal 8 karakter"),
     event: z.string().min(1, "Event harus dipilih"),
     bio: z.string().max(100, "Bio maksimal 100 karakter"),
