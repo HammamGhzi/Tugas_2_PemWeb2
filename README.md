@@ -1,74 +1,29 @@
-# React + TypeScript + Vite
+# Form Pendaftaran — Tugas Praktikum
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tampilan Form & Validasi
 
-Currently, two official plugins are available:
+Form menampilkan pesan error di bawah setiap field apabila input tidak valid saat tombol Daftar diklik.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Validasi Form](img/zod%20validasi.png)
 
-## React Compiler
+Pesan error yang muncul:
+- **Nama harus diisi** — jika field kosong
+- **Format email tidak valid** — jika email tidak sesuai format
+- **Password minimal 8 karakter** — jika password kurang dari 8 karakter
+- **Event harus dipilih** — jika dropdown belum dipilih
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Form Terisi
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Contoh form yang sudah diisi dengan benar sebelum submit.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Form Terisi](img/hasil.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Custom Dropdown
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Dropdown "Pilih Event" dibuat custom dengan 3 pilihan: **Workshop**, **Seminar**, dan **IT Competition**. Pilihan aktif ditandai warna biru, dan ikon panah berubah arah saat dropdown dibuka.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
+![Custom Dropdown](img/dropdown%20select.png)
