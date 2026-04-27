@@ -37,7 +37,8 @@ export default function RegisterForm() {
 
     return (
 
-        <div className="bg-white w-full max-w-md p-8 rounded-2xl shadow-sm border border-gray-100">
+        <div className=" p-8 rounded-2xl shadow-sm ">
+            <h2 className="text-3xl font-bold mb-4 text-center">Register</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <InputText
                     label="Nama"
@@ -76,6 +77,8 @@ export default function RegisterForm() {
                 <div className="flex justify-center">
                     <Button label="Daftar" variant="primary" className="rounded-3xl " />
                 </div>
+
+                 <p className="mt-4 text-sm">sudah punya akun? <a href="/login" className="text-blue-500 hover:underline">Login sekarang</a></p>
             </form>
         </div>
 
