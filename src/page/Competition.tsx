@@ -8,14 +8,10 @@ export default function Competition() {
                             >
                               <div className="w-2/3 flex flex-col gap-6">
                                <h1 className="text-red-800 text-5xl font-bold">IT Competition</h1>
-                               <h2 className="text-red-800 text-4xl font-semibold">"From Creation to Inovation"</h2>
+                               <h2 className="text-red-800 text-2xl font-semibold">"From Creation to Inovation"</h2>
                         
-                                <p>
-                                  Invofest (Informatics Vocational Festival) adalah festival tahunan
-                                  yang bertujuan untuk menginspirasi dan memberdayakan generasi muda
-                                  Indonesia dalam menghadapi era digital. Dengan mengusung tema
-                                  “Beyond Limits, Beyond Intelligence: Innovate for a Smarter
-                                  Tomorrow ”.
+                                <p className="text-sm">
+                                  Kompetisi dalam INVOFEST ini mengusung tema “From Creation to Innovation”, Tema ini bertujuan mengajak generasi muda untuk mengembangkan inovasi dan kreativitas guna membentuk kelompok yang memiliki potensi luar biasa, yang mampu mewujudkan masa depan yang berkelanjutan.
                                 </p>
                     
                                 <div className="flex gap-3">
