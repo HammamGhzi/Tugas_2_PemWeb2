@@ -5,6 +5,8 @@ import InputPassword from "../components/ui/InputPassword";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Button from "../components/ui/Button";
+import { useAuthStore } from "../store/useAuthStore";
+import { useNavigate } from "react-router-dom";
 
 
 type FormData = {
@@ -17,14 +19,23 @@ const schema = z.object({
     password: z.string().min(8, "Password minimal 8 karakter"),
 });
 
+
 export default function LoginForm() {
     const {register, 
             handleSubmit, 
              formState: {errors}} = useForm<FormData>({resolver: zodResolver(schema)});
 
     const onSubmit = (data : FormData) => {
-        console.log(data);
+        if(data.email === "hammamghazi54@gmail.com" && data.password === "password123") {
+            alert("Login berhasil!");
+            login(data.email);
+            navigate("/dashboard");
+        } else {
+            alert("Email atau password salah!");
+        }
     }
+    const login = useAuthStore((state) => state.login);
+    const navigate = useNavigate();
 
     return ( 
         <div className=" mt-30 ml-30 items-center justify-center">
