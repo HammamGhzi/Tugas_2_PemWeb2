@@ -1,29 +1,26 @@
 # Form Pendaftaran — Tugas Praktikum
 
-## Tampilan Form & Validasi
+## Tampilan Halaman Utama InvoFest
 
-Form menampilkan pesan error di bawah setiap field apabila input tidak valid saat tombol Daftar diklik.
+Menampailkan halaman beranda,competition, seminar, workshop, talkshow
 
-![Validasi Form](img/zod%20validasi.png)
+![Beranda](img/beranda.png)
+![Competition](img/competition.png)
+![Seminar](img/seminar.png)
+![Workshop](img/workshop.png)
+![Talkshow](img/talkshow.png)
 
-Pesan error yang muncul:
-- **Nama harus diisi** — jika field kosong
-- **Format email tidak valid** — jika email tidak sesuai format
-- **Password minimal 8 karakter** — jika password kurang dari 8 karakter
-- **Event harus dipilih** — jika dropdown belum dipilih
+## Tampilan Login dan Registrasi    
 
----
+form regist dan login
 
-## Form Terisi
-
-Contoh form yang sudah diisi dengan benar sebelum submit.
-
-![Form Terisi](img/hasil.png)
+![Form Regis](img/registrasi.png)
+![Form Login](img/login.png)
 
 ---
 
-## Custom Dropdown
+## Dashboard
 
-Dropdown "Pilih Event" dibuat custom dengan 3 pilihan: **Workshop**, **Seminar**, dan **IT Competition**. Pilihan aktif ditandai warna biru, dan ikon panah berubah arah saat dropdown dibuka.
+Memuat sidebar : **Dashbord**, **Category**,  **Event**,**Seminar**. dan terdapat form add new **Category**,  **Event**,**Seminar**.
 
-![Custom Dropdown](img/dropdown%20select.png)
+![Dashboard](img/dashboard.png)
