@@ -32,7 +32,7 @@ export default function BiodataIndex() {
             <div className="relative">
               <div className="absolute inset-0 bg-yellow-300 border-4 border-black translate-x-2 translate-y-2 z-0" />
               <img
-                src="/img/Hammam Profil.jpg"
+                src="/img/Hammam_Profil.jpg"
                 alt="Foto Hammam"
                 className="relative z-10 w-48 h-48 object-cover border-4 border-black"
               />
