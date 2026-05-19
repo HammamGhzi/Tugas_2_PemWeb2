@@ -17,6 +17,10 @@ import CategoryCreate from "./dashboard/category/CategoryCreate";
 import SeminarIndex from "./dashboard/seminar/SeminarIndex";
 import SpeakerCreate from "./dashboard/seminar/SpeakerCreate";
 import EventCreate from "./dashboard/event/EventCreate";
+import CategoryUpdate from "./dashboard/category/CategoryUpdate";
+import EventUpdate from "./dashboard/event/EventUpdate";
+import UpdateSpeaker from "./dashboard/seminar/UpdateSpeaker";
+import BiodataIndex from "./dashboard/biodata/BiodataIndex";
 
 function App() {
   return (
@@ -39,10 +43,14 @@ function App() {
               <Route path="/dashboard" element={<DashboardIndex />} />
               <Route path="/dashboard/category" element={<CategoryIndex />} />
               <Route path="/dashboard/category/create" element={<CategoryCreate />} />
+              <Route path="/dashboard/category/update/:id" element={<CategoryUpdate />} />
               <Route path="/dashboard/event" element={<EventIndex />} />
               <Route path="/dashboard/event/new" element={<EventCreate/>}/>
+              <Route path="/dashboard/event/update/:id" element={<EventUpdate />} />
               <Route path="/dashboard/seminar" element={<SeminarIndex />} />
               <Route path="/dashboard/seminar/speaker" element={<SpeakerCreate/>}/>
+              <Route path="/dashboard/seminar/speaker/update/:id" element={<UpdateSpeaker />} />
+              <Route path="/dashboard/biodata" element={<BiodataIndex />} />
             </Route>
           </Route>
         </Route>

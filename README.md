@@ -1,26 +1,30 @@
-# InvoFest — Tugas Praktikum
 
-## Tampilan Halaman Utama InvoFest
 
-Menampailkan halaman beranda,competition, seminar, workshop, talkshow
+Website manajemen event berbasis Full-stack Framework.
 
-![Beranda](img/beranda.png)
-![Competition](img/competition.png)
-![Seminar](img/seminar.png)
-![Workshop](img/workshop.png)
-![Talkshow](img/talkshow.png)
+##  Identitas Mahasiswa
 
-## Tampilan Login dan Registrasi    
-
-form regist dan login
-
-![Form Regis](img/registrasi.png)
-![Form Login](img/login.png)
+| Field | Detail |
+|---|---|
+| Nama | Muhammad Hammam Ghazi |
+| NIM | 24090056 |
+| Kelas | 4B |
+| Prodi | D4 Teknik Informatika |
+| Fakultas | Sekolah Vokasi — Universitas Harkat Negeri |
 
 ---
 
-## Dashboard
 
-Memuat sidebar : **Dashbord**, **Category**,  **Event**,**Seminar**. dan terdapat form add new **Category**,  **Event**,**Seminar**.
+|  GitHub Backend | [https://github.com/username/repo-backend] |
+|  Youtube | [Coming Soon] | 
 
-![Dashboard](img/dashboard.png)
+---
+
+##  Teknologi yang Digunakan
+
+### Frontend
+- React + TypeScript
+- Zustand (state management & auth)
+- React Hook Form + Zod (validasi form)
+- React Router DOM (routing & protected routes)
+- Tailwind CSS (styling neubrutalism)
