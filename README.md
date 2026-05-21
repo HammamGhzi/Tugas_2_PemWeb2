@@ -16,7 +16,7 @@ Website manajemen event berbasis Full-stack Framework.
 
 
 |  GitHub Backend | [https://github.com/HammamGhzi/InvoFest-BackEnd] |
-|  Youtube | [Coming Soon] | 
+|  Youtube | [https://youtu.be/odYAs1U4TgM] | 
 
 ---
 
